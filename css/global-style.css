@@ -1,0 +1,64 @@
+*{
+    font-family: Verdana;
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+.container{
+    margin: 1% auto;
+}
+#logo{
+    margin: 2%;
+    width: 100%;
+    border: 1px solid #AAA;
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 100%;
+}
+#theme-icon{
+    width: 40%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.nav-but{
+    border: 1px solid #AAA;
+    box-shadow: 0px 0px 2px 0px black;
+    border-radius: 50px;
+    text-align: center;
+    padding: 7%;
+}
+.nav-but:hover{
+    background-color: #BBB;
+}
+.nav-but:active{
+    transform: scale(0.95);
+    background-color: #CCC;
+}
+#main-content{
+    width: 100%;
+}
+
+footer{
+    border-top: 1px solid black;
+}
+.principal-footer{
+    font-style: italic;
+    font-size: 0.8em;
+}
+#mapa{
+    border: 1px solid black;
+    margin: 2%;
+    width: 96%;
+}
+#insta-logo,
+#pedya-logo,
+#fb-logo{
+    margin: 0;
+    width: 20%;
+    border-radius: 100%;
+}
+.footer{
+    font-size: 0.67em;
+    text-align: center;
+}

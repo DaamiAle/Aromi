@@ -1,0 +1,8 @@
+*,
+body,
+header,
+main,
+footer{
+    background-color: #555;
+    color: white;
+}
