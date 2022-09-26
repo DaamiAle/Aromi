@@ -2,41 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: inherit;
 }
 .container-galery{
-    width: 100%;
+    width: 320px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
 }
 .slider-container{
-    width:50%;
+    width:100%;
     position: absolute;
-    animation: rotate 10s infinite linear;
+    animation: girar 32s infinite linear;
+    transform-style: preserve-3d;
+}
+.slider-container:hover{
+    transform: scale(1.2);
+    animation-play-state: paused;
 }
 .slider-container figure{
     width: 100%;
-    height: 100%;
+    height: 300px;
+    overflow: hidden;
     position: absolute;
+    vertical-align: middle;
 }
 .slider-container figure:nth-child(1){
     transform: rotateY(0deg) translateZ(300px);
 }
 .slider-container figure:nth-child(2){
-    transform: rotateY(72deg) translateZ(300px);
+    transform: rotateY(60deg) translateZ(300px);
 }
 .slider-container figure:nth-child(3){
-    transform: rotateY(144deg) translateZ(300px);
+    transform: rotateY(120deg) translateZ(300px);
 }
 .slider-container figure:nth-child(4){
-    transform: rotateY(216deg) translateZ(300px);
+    transform: rotateY(180deg) translateZ(300px);
 }
 .slider-container figure:nth-child(5){
-    transform: rotateY(288deg) translateZ(300px);
+    transform: rotateY(240deg) translateZ(300px);
+}
+.slider-container figure:nth-child(6){
+    transform: rotateY(300deg) translateZ(300px);
+}
+.slider-container figure:nth-child(7){
+    transform: rotateY(360deg) translateZ(300px);
 }
 .slider-container img{
-    width: 50%;
+    width: 100%;
+    align-items: center;
+}
+.slider-container img:hover{
+    transform: scale(1.4);
+    transition: all 400ms;
+
 }
 
-@keyframes rotate{
+@keyframes girar{
     from{
         transform: rotateY(0deg);
     }
@@ -44,127 +65,3 @@
         transform: rotateY(360deg);
     }
 }
-/*
-.container-galery{
-    max-width: 800px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-
-}
-input[type="radio"]{
-    display: none;
-}
-.slider-container{
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    max-height: 450px;
-    position: relative;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cards{
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-}
-.card{
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.5s cubic-bezier(0.2 , 0.8 , 0.4 , 1);
-}
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-#img2:checked ~ .cards #selector1,
-#img1:checked ~ .cards #selector5,
-#img5:checked ~ .cards #selector4,
-#img4:checked ~ .cards #selector3,
-#img3:checked ~ .cards #selector2{
-    transform: translateX(-80%) scale(0.7);
-    z-index: 0;
-}
-#img5:checked ~ .cards #selector1,
-#img1:checked ~ .cards #selector2,
-#img2:checked ~ .cards #selector3,
-#img3:checked ~ .cards #selector4,
-#img4:checked ~ .cards #selector5{
-    transform: translateX(80%) scale(0.7);
-    z-index: 0;
-}
-
-#img1:checked ~ .cards #selector1,
-#img2:checked ~ .cards #selector2,
-#img3:checked ~ .cards #selector3,
-#img4:checked ~ .cards #selector4,
-#img5:checked ~ .cards #selector5{
-    transform: translateX(0) scale(1);
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-/*
-.container-galery{
-    max-width: 100%;
-    height: 500px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30% 10%;
-}
-.slider-container{
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    max-height: 250px;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input[type="radio"]{
-    display: none;
-}
-.cards{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.card{
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.5s cubic-bezier(0.2 , 0.8 , 0.4 , 1);
-}
-.card img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}*/
