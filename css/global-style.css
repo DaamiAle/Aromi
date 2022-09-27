@@ -37,8 +37,7 @@ header{
     background-color: #CCC;
 }
 main{
-    min-height: 360px;
-    padding: 1.5%;
+    padding: 2%;
 }
 footer{
     border-top: 1px solid black;

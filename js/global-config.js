@@ -43,13 +43,20 @@ function actualizarIframe(){
 
 function goIndex(){
     document.getElementById('main-content').src = 'galery.html';
+    document.getElementById('main-content').width = '100%';
+    document.getElementById('main-content').height = '300';
     checkTheme();
 }
 function goMenu(){
     document.getElementById('main-content').src = 'menu.html';
+    document.getElementById('main-content').width = '100%';
+    document.getElementById('main-content').height = '600'
     checkTheme();
 }
 function goContact(){
     document.getElementById('main-content').src = 'contacto.html';
+    document.getElementById('main-content').width = '100%';
+    document.getElementById('main-content').height = '400'
     checkTheme();
 }
+
