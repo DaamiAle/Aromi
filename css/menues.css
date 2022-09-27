@@ -1,0 +1,16 @@
+.menues{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0;
+    height: inherit;
+}
+.menues p:hover{
+    cursor: pointer;
+}
+.menu-detail{
+    height: inherit;
+    text-align: center;
+}
+.lista-menu{
+    align-self: start;
+}
